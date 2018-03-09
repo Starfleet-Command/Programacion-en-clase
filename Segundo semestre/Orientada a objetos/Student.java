@@ -38,7 +38,9 @@ public int GetUnits()
 
 public void PrintEstudiante(Student other)
 {
-  System.out.println("El ID del primer estudiante es: "+this.id "Su Nombre es: "+this.name "Sus unidades añadidas son: "+this.units);
+  System.out.println("El ID del primer estudiante es: "+this.id);
+  System.out.println("Su Nombre es: "+this.name);
+  System.out.println("Sus unidades añadidas son: "+this.units);
 }
 
 }
