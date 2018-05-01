@@ -16,9 +16,17 @@ public Tarjeta(String numero, double saldo, int diaexpe, int mesexpe, int anoexp
 
 }
 
+public Tarjeta(String numero, double saldo, int diaexpe, int mesexpe, int anoexpe, int diaexpi, int mesexpi, int anoexpi)
+{
+  this.numero = numero;
+  this.saldo = saldo;
+  fechaExpiracion=new Fecha(diaexpi,mesexpi,anoexpi);
+  fechaExpedicion=new Fecha(diaexpe,mesexpe,anoexpe);
+}
+
 public Tarjeta()
 {
-
+  
 }
 public String getNumero()
 {

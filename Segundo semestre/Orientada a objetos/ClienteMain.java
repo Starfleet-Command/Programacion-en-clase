@@ -9,21 +9,24 @@ public class ClienteMain
   {
     Scanner sc = new Scanner(System.in);
     ArrayList<Cliente> lista = new ArrayList<Cliente>();
-    char respuesta = "Y";
+    char respuesta = 'Y';
+    char answer = 'N';
     int contador =0;
+    String nombre,apellido;
+    int id,edad;
 
     do{
       System.out.println("Nombre?");
-      String nombre = sc.next();
+       nombre = sc.next();
 
       System.out.println("Apellido?");
-      String apellido = sc.next();
+       apellido = sc.next();
 
       System.out.println("Edad?");
-      int edad = sc.nextInt();
+       edad = sc.nextInt();
 
       System.out.println("ID?");
-      String id = sc.next();
+       id = sc.nextInt();
 
 
       Cliente client = new Cliente(id, nombre,apellido, edad);
@@ -58,22 +61,22 @@ public class ClienteMain
 
           switch(type){
             case 1:
-            Tarjeta tcClasica = new Tarjeta(numero,balance,dia,mes,anio,dia,mes,anio+5,tipotc.CLASICA);
+            Tarjeta tcClasica = new Tarjeta(numero,balance,dia,mes,anio,dia,mes,anio+5,TipoTc.CLASICA);
             break;
             case 2:
-            Tarjeta tcOro = new Tarjeta(numero,balance,dia,mes,anio,dia,mes,anio+5,tipotc.ORO);
+            Tarjeta tcOro = new Tarjeta(numero,balance,dia,mes,anio,dia,mes,anio+5,TipoTc.ORO);
             break;
             case 3:
-            Tarjeta tcPlat = new Tarjeta(numero,balance,dia,mes,anio,dia,mes,anio+5,tipotc.PLATINUM);
+            Tarjeta tcPlat = new Tarjeta(numero,balance,dia,mes,anio,dia,mes,anio+5,TipoTc.PLATINUM);
             break;
             case 4:
-            Tarjeta tcBlack = new Tarjeta(numero,balance,dia,mes,anio,dia,mes,anio+5,tipotc.BLACK);
+            Tarjeta tcBlack = new Tarjeta(numero,balance,dia,mes,anio,dia,mes,anio+5,TipoTc.BLACK);
             break;
             default:
             Tarjeta tcdefault = new Tarjeta(numero,balance,dia,mes,anio,dia,mes,anio+5);
 
           }
-          cliente.setTarjeta(tc);
+          client.setTarjeta(tc);
 
             lista.add(client);
             contador++;

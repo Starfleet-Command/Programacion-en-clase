@@ -1,0 +1,7 @@
+Warning[205] NBPROJECT\SEMAFORO.ASM 2 : Found directive in column 1. (__CONFIG)
+Warning[203] NBPROJECT\SEMAFORO.ASM 44 : Found opcode in column 1. (RETURN)
+Warning[203] NBPROJECT\SEMAFORO.ASM 63 : Found opcode in column 1. (RETURN)
+Message[302] NBPROJECT\SEMAFORO.ASM 72 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] NBPROJECT\SEMAFORO.ASM 74 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] NBPROJECT\SEMAFORO.ASM 76 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[203] NBPROJECT\SEMAFORO.ASM 103 : Found opcode in column 1. (GOTO)

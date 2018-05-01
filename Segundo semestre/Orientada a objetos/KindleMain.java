@@ -9,6 +9,7 @@ public class KindleMain
    String reciente ="";
    int numero;
    Kindle kindle = new Kindle();
+  
 
 
   System.out.println("Desea añadir un nuevo libro a su biblioteca?[Y/N]" );
