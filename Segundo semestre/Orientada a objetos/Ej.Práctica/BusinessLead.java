@@ -1,4 +1,4 @@
-public class BusinessLead
+public class BusinessLead extends Accountant
 {
 
 }

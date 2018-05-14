@@ -109,7 +109,7 @@ PlanetasP plans = new PlanetasP();
                 entweder=true;
               }
               else entweder = false;
-              System.out.println("DEBUG:"+encuentros.encounter);
+            
             RandomDecisiones decisionesR = new RandomDecisiones(encuentros.encounter,encuentros.consequence,entweder);
             decisionesR.DescribeConsecuencias(sistemas);
             decisionesR.StaticConsequences(sistemas);

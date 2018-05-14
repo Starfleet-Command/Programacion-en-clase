@@ -1,4 +1,4 @@
-public class Employee extends Managers
+public class Employee extends Managers implements EmployeeStatus
 {
   protected String name;
   protected double baseSalary;
@@ -61,5 +61,10 @@ public boolean isManager(Object e)
   return isManager;
 }
 
+@Override
+public String employeeStatus()
+{
+  return 0;
+}
 
 }

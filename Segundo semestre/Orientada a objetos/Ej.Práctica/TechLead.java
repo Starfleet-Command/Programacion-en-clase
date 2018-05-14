@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class TechLead extends TechEmployee implements CheckIn
+public class TechLead extends TechEmployee implements Bonus,EmployeeStatus
 {
   protected String name;
   protected int headCount=4;
@@ -13,7 +13,7 @@ public class TechLead extends TechEmployee implements CheckIn
     this.headCount=4;
   }
 
-  
+
 
   public boolean hasHeadCount()
   {
@@ -33,7 +33,7 @@ public class TechLead extends TechEmployee implements CheckIn
   else return false;
   }
 
-  public boolean approveCheckIn(SoftwareEngineer e)
+  public boolean checkIns(SoftwareEngineer e)
   {
     if(reportes.contains(e) && e.hasAccess==true)
     {
@@ -59,4 +59,7 @@ public class TechLead extends TechEmployee implements CheckIn
     return completa;
   }
 
-}
+  public boolean RequestBonus(Employee e,double bonus)
+  {
+    e.
+  }

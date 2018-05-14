@@ -133,7 +133,7 @@ ArrayList<PlanetasP> planets = new ArrayList<PlanetasP>();
 
      if(super.isMejorado==true || (a>1 && b>1 && c>1 && d>1 && e>1))
      {
-       a--;b--;c--;d--;c--;
+       a--;b--;c--;d--;e--;
        super.isMejorado=false;
      }
 

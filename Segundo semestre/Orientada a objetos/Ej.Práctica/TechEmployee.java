@@ -1,4 +1,4 @@
-public class TechEmployee extends Employee
+public class TechEmployee extends Employee implements EmployeeStatus
 {
   protected String name;
   protected double salario=75000;
@@ -9,7 +9,7 @@ public class TechEmployee extends Employee
   }
 
 
-
+@Override
   public String employeeStatus()
   {
     String part = super.toString();

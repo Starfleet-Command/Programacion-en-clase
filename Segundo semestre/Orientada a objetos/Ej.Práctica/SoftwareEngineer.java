@@ -3,6 +3,7 @@ public class SoftwareEngineer extends TechEmployee
   protected String name;
   protected boolean hasAccess=false;
   public  int checkIns=0;
+  protected double salario;
  TechLead dummy= new TechLead("Dummy");
 
   public SoftwareEngineer(String name)
@@ -10,6 +11,7 @@ public class SoftwareEngineer extends TechEmployee
   super(name);
   this.hasAccess = hasAccess;
   this.checkIns=checkIns;
+  this.salario=super.salario;
 }
 
 
@@ -34,7 +36,13 @@ public int getSuccessfulCheckIns()
 
  public boolean checkInCode()
 {
-  dummy.
+  boolean confirma = dummy.approveCheckIn(this);
+  if(confirma==false)
+  {
+    this.hasAccess=false;
+    return false;
+  }
+  else return true;
 }
 
 
