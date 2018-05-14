@@ -28,9 +28,7 @@ public class Condiciones2
 			case 5:
 				System.out.println("Tu tarifa para este viaje es $82916");
 				break;
-			default:
-				System.out.println("Esa opcion no existe");
 
 			}
 		}
-}
+	}
