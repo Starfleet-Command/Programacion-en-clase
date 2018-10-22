@@ -3,6 +3,7 @@ public class EjerciciosRecursiva
   public static void main(String[] args)
   {
     int[] arreglo = {1,2,3,4,5};
+    int[] temparray = new int[arreglo.length];
     char[] arreglos= new char[3];
     String lleva = "123";
     for(int o=0;o<3;o++)
@@ -11,7 +12,7 @@ public class EjerciciosRecursiva
     }
     int result=Factorial(3);
     int result2=Exponencial(2,4);
-    int[] result3= Replace(arreglo,arreglo.length);
+    int[] result3= Replace(arreglo,arreglo.length,temparray);
     System.out.println("El factorial de 3 es "+result);
     System.out.println("2 a la 4ta potencia es "+result2);
     System.out.println("El arreglo queda de la forma: ");
@@ -44,11 +45,10 @@ public class EjerciciosRecursiva
     return num* Exponencial(num,reps);
   }
 
-  public static int[] Replace(int[] arreglo,int cantidad)
+  public static int[] Replace(int[] arreglo,int cantidad, int[] temparray)
   {
 
     cantidad--;
-    int[] temparray = new int[arreglo.length];
     if(cantidad==0)
     {
       int temp=1;
@@ -56,13 +56,8 @@ public class EjerciciosRecursiva
       {
         temp*=arreglo[k];
         temparray[cantidad]=temp;
-     }
-     for(int v=0;v<arreglo.length;v++)
-     {
-       arreglo[v]=temparray[v];
-       System.out.println("Valor de temparray es:"+temparray[v]);
-     }
-      return arreglo;
+}
+      return temparray;
     }
 
     int temp2=1;
@@ -74,13 +69,13 @@ public class EjerciciosRecursiva
       }
 
       temparray[cantidad]=temp2;
-      System.out.println("Valor de temparray en loop es:"+temparray[cantidad]);
    }
 
 
-    return Replace(arreglo,cantidad);
-  }
 
+    return Replace(arreglo,cantidad,temparray);
+  }
+// Inspiración para la solución fue obtenida de la universidad de Princeton en (https://introcs.cs.princeton.edu/java/23recursion/PermutationsK.java.html)
   public static void Longitud(char[] a, int k) {
         Combinar(a, a.length, k);
     }
@@ -89,7 +84,7 @@ public class EjerciciosRecursiva
         if (k == 0) {
             for (int i = n; i < a.length; i++)
                 System.out.print(a[i]);
-            System.out.println();
+            System.out.println("");
             return;
         }
 
