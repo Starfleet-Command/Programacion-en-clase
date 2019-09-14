@@ -1,0 +1,22 @@
+﻿  AlgoritmosTrees.cpp
+c:\users\juan fco\desktop\programacion\quinto semestre\algoritmos\algoritmostrees\algoritmostrees\algoritmostrees.cpp(436): error C2440: 'inicializando': no se puede realizar la conversión de 'usefulData<T>' a 'usefulData<T>'
+          with
+          [
+              T=int
+          ]
+  c:\users\juan fco\desktop\programacion\quinto semestre\algoritmos\algoritmostrees\algoritmostrees\algoritmostrees.cpp(436): note: No se puede copiar el constructor struct 'usefulData<T>' porque hay constructores de copia ambiguos o no hay un constructor de copia disponible
+          with
+          [
+              T=int
+          ]
+  c:\users\juan fco\desktop\programacion\quinto semestre\algoritmos\algoritmostrees\algoritmostrees\algoritmostrees.cpp(429): note: durante la compilación de la función miembro de plantilla clase de 'bool two3Tree<int>::insert(T)'
+          with
+          [
+              T=int
+          ]
+  c:\users\juan fco\desktop\programacion\quinto semestre\algoritmos\algoritmostrees\algoritmostrees\algoritmostrees.cpp(1122): note: vea la referencia a la creación de instancias de plantilla de función 'bool two3Tree<int>::insert(T)' que se está compilando
+          with
+          [
+              T=int
+          ]
+  c:\users\juan fco\desktop\programacion\quinto semestre\algoritmos\algoritmostrees\algoritmostrees\algoritmostrees.cpp(1107): note: vea la referencia a la creación de instancias de plantilla clase de 'two3Tree<int>' que se está compilando
