@@ -312,9 +312,10 @@ public RedBlackNode<T> treeMinimum(RedBlackNode<T> node)
     return node;
 }        // end treeMinimum(RedBlackNode node)
 
+
 //@param: node, a RedBlackNode
 //@return: the height of the node
-public void nodeHeight(RedBlackNode<T> node)
+public int nodeHeight(RedBlackNode<T> node)
 {
     int height = 0;
     // while there is a smaller key, keep going left
@@ -323,10 +324,11 @@ public void nodeHeight(RedBlackNode<T> node)
         node   = node.left;
         height = height + 1;
     }
-    System.out.println("La altura del nodo es: " + height);
+
+    return height;
 }
 
-public void nodeDepth(RedBlackNode<T> node)
+public int nodeDepth(RedBlackNode<T> node)
 {
     int             depth = 0;
     RedBlackNode<T> y     = node.parent;
@@ -337,7 +339,18 @@ public void nodeDepth(RedBlackNode<T> node)
         y     = y.parent;
         depth = depth + 1;
     }
-    System.out.println("La profundidad del nodo es: " + depth);
+    return depth;
+}
+
+public int nodeLevel(RedBlackNode<T> node)
+{
+    int height = 0;
+    int depth  = 0;
+
+    height = nodeHeight(node);
+    depth  = nodeDepth(node);
+
+    return height + depth;
 }
 
 // @param: x, a RedBlackNode whose successor we must find
@@ -752,10 +765,15 @@ public static void main(String[] args)
     }
     size = rbt.size();
     System.out.println("El tamaño es: " + size);
-    RedBlackNode<Integer> test = rbt.search(elementos.get(3));
-    rbt.nodeHeight(test);
-    rbt.nodeDepth(test);
+    RedBlackNode<Integer> test   = rbt.search(elementos.get(3));
+    int                   height = rbt.nodeHeight(test);
+    System.out.println("La altura del nodo es: " + height);
 
+    int depth = rbt.nodeDepth(test);
+    System.out.println("La profundidad del nodo es: " + depth);
+
+    int  level = rbt.nodeLevel(test);
+    System.out.println("El nivel del nodo es: " + depth + " de " + level);
     long startTime = System.nanoTime();
     for (int k = 0; k < 10; k++)
     {

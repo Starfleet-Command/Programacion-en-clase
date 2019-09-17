@@ -2,7 +2,6 @@
 #include <iostream>
 using namespace std;
 
-
 /*-------------------------two3 Tree's Node-------------------------*/
 template <class T>
 struct two3node
@@ -509,10 +508,9 @@ public:
                 {
                     usefulData<T> s1 = insert (r -> left, d, r);
 
-                    //Because parents par splitting ka result pass on hota hai
                     if (s1.child != nullptr)
                     {
-                        //Larger key ko right pe shift kar do, isi lye ye do steps
+
                         r -> k2 = r -> k1;
                         r -> k1 = s1.midValue;
 
