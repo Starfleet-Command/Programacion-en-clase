@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+import java.util.Scanner;
 
 // Class Definitions
 public class RedBlackTree<T extends Comparable<T> > {
@@ -312,9 +313,10 @@ public RedBlackNode<T> treeMinimum(RedBlackNode<T> node)
     return node;
 }        // end treeMinimum(RedBlackNode node)
 
+
 //@param: node, a RedBlackNode
 //@return: the height of the node
-public void nodeHeight(RedBlackNode<T> node)
+public int nodeHeight(RedBlackNode<T> node)
 {
     int height = 0;
     // while there is a smaller key, keep going left
@@ -323,10 +325,11 @@ public void nodeHeight(RedBlackNode<T> node)
         node   = node.left;
         height = height + 1;
     }
-    System.out.println("La altura del nodo es: " + height);
+
+    return height;
 }
 
-public void nodeDepth(RedBlackNode<T> node)
+public int nodeDepth(RedBlackNode<T> node)
 {
     int             depth = 0;
     RedBlackNode<T> y     = node.parent;
@@ -337,7 +340,18 @@ public void nodeDepth(RedBlackNode<T> node)
         y     = y.parent;
         depth = depth + 1;
     }
-    System.out.println("La profundidad del nodo es: " + depth);
+    return depth;
+}
+
+public int nodeLevel(RedBlackNode<T> node)
+{
+    int height = 0;
+    int depth  = 0;
+
+    height = nodeHeight(node);
+    depth  = nodeDepth(node);
+
+    return height + depth;
 }
 
 // @param: x, a RedBlackNode whose successor we must find
@@ -743,7 +757,19 @@ public static void main(String[] args)
     int                   size      = 100000;
     ArrayList<Integer>    elementos = new ArrayList<Integer>();
     Random                rng       = new Random();
-    Random                searchrng = new Random();
+    Scanner               lector    = new Scanner(System.in);
+
+    rbt.insert(1);
+    rbt.insert(7777);
+    rbt.insert(89);
+    rbt.insert(2333);
+    rbt.insert(90909);
+    rbt.insert(47509);
+    rbt.insert(377592);
+    rbt.insert(999999);
+    rbt.insert(42);
+    rbt.insert(576431);
+
     for (int s = 0; s < size; s++)
     {
         Integer rand = rng.nextInt(size * 10) + 1;
@@ -752,16 +778,22 @@ public static void main(String[] args)
     }
     size = rbt.size();
     System.out.println("El tamaño es: " + size);
-    RedBlackNode<Integer> test = rbt.search(elementos.get(3));
-    rbt.nodeHeight(test);
-    rbt.nodeDepth(test);
+    RedBlackNode<Integer> test   = rbt.search(elementos.get(3));
+    int                   height = rbt.nodeHeight(test);
+    //  System.out.println("La altura del nodo es: " + height);
 
-    long startTime = System.nanoTime();
-    for (int k = 0; k < 10; k++)
-    {
-        Integer randSearch = searchrng.nextInt(elementos.size()) + 1;
-        rbt.search(elementos.get(randSearch));
-    }
+    int depth = rbt.nodeDepth(test);
+    // System.out.println("La profundidad del nodo es: " + depth);
+
+    int level = rbt.nodeLevel(test);
+    // System.out.println("El nivel del nodo es: " + depth + " de " + level);
+
+    System.out.println("");
+    System.out.println("Escriba uno de los numeros siguientes: 1 \t 7777 \t 89 \t 2333 \t 90909 \t 47509 \t 377592 \t 999999 \t 42 \t 576431 \n");
+    Integer randSearch = lector.nextInt();
+    long    startTime  = System.nanoTime();
+    rbt.search(elementos.get(randSearch));
+
     long endTime     = System.nanoTime();
     long timeElapsed = endTime - startTime;
     System.out.println("tiempo en milisegundos : " + timeElapsed / 1000000);

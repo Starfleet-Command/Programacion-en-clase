@@ -1,10 +1,10 @@
-
-package util;
-
+import java.util.Random;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Queue;
+import java.util.concurrent.TimeUnit;
+
 
 public class TwoThreeTree<T extends Comparable<T> > implements Iterable<T> {
 // a Node has 1 (2-Node) or 2 (3-Node) values
@@ -127,10 +127,7 @@ boolean addToInterior(T x)
 // the ith child is a 4-node
 void childIs4Node(int i)
 {
-    System.out.println("childIs4Node " + i);
-    System.out.println(this);
     Node<T> the4Node = children.get(i);
-    System.out.println(the4Node);
     // move the middle value from the 4-node child up
     // to its parent
     if (i == 2)
@@ -179,7 +176,6 @@ public boolean add(T val)
         // if root is a 4-node, split it
         if (root.vals.size() == 3)
         {
-            System.out.println("Split " + val);
             Node<T> left, right;
             if (root.isLeaf())
             {
@@ -219,27 +215,74 @@ public void nodeHeight()
 {
 }
 
+public void printAscending(TwoThreeTree<T> tree)
+{
+    for (T i : tree)
+    {
+        System.out.print(i + " ");
+    }
+    System.out.println("");
+}
+
+public void printDescending()
+{
+    Iterator  itr       = iterator();
+    ArrayList backwards = new ArrayList();
+    while (itr.hasNext())
+    {
+        backwards.add(itr.next());
+    }
+    for (int s = backwards.size() - 1; s > 0; s--)
+    {
+        System.out.print(backwards.get(s) + " ");
+    }
+    System.out.println("");
+}
+
+public Node<T> search(T key)
+{
+    int     i = 0;
+    Node<T> notfound;
+    while (i < root.vals.size())
+    {
+        if (root.vals.get(i) == key)
+        {
+            return root.vals.get(i);
+        }
+        else if (root.children.get(i) == key)
+        {
+            return root.children.get(i);
+        }
+        else
+            return notfound;
+    }
+}
+
 // test method
 public static void main(String[] args)
 {
-    TwoThreeTree<Integer> set = new TwoThreeTree<Integer>();
-    System.out.println("add 10 " + set.add(10));
-    System.out.println("add 20 " + set.add(20));
-    System.out.println("add 30 " + set.add(30));
-    System.out.println("add 1 " + set.add(1));
-    System.out.println("add 4 " + set.add(4));
-    System.out.println("add 3 " + set.add(3));
-    System.out.println("add 2 " + set.add(2));
-    System.out.println("add 2 " + set.add(2));
-    System.out.println("add 4 " + set.add(4));
-    System.out.println("add 15" + set.add(15));
-    System.out.println("add 17" + set.add(17));
-    System.out.println("add 18" + set.add(18));
-    System.out.println("add 19" + set.add(19));
-    System.out.println("Print " + set.root);
-    System.out.println("Iterate");
-    for (Integer i : set)
-        System.out.print(i + " ");
-    System.out.println();
+    TwoThreeTree<Integer> set       = new TwoThreeTree<Integer>();
+    ArrayList<Integer>    elementos = new ArrayList<Integer>();
+    int                   size      = 100000;
+    Random                rng       = new Random();
+
+    for (int s = 0; s < size; s++)
+    {
+        Integer rand = rng.nextInt(size * 10) + 1;
+        elementos.add(rand);
+        set.add(rand);
+    }
+    //  set.printAscending(set);
+    //  set.printDescending();
+
+    long startTime = System.nanoTime();
+    for (int k = 0; k < 10; k++)
+    {
+        Integer randSearch = rng.nextInt(elementos.size()) + 1;
+        set.search(elementos.get(randSearch));
+    }
+    long endTime     = System.nanoTime();
+    long timeElapsed = endTime - startTime;
+    System.out.println("tiempo en milisegundos : " + timeElapsed / 1000000);
 }
 }
