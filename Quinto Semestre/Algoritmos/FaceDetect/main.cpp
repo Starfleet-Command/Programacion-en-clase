@@ -32,7 +32,7 @@ int main(int argc, const char **argv)
         vector<Rect> faces;
 
         //llamar a la clase
-        FaceDetector Detect(face_cascade_name, next_height);
+        FaceDetector Detect(face_cascade_name, next_height, 1.1, 4, 40, 0);
 
         //Se asigna video en vivo a captura
         capture = VideoCapture(0);
