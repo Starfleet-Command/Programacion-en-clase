@@ -1,0 +1,155 @@
+The system is: Windows - 10.0.17134 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine versión 15.9.21+g9802d43bc3 para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilación iniciada a las 03/10/2019 12:23:12 p. m..
+Proyecto "C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CompilerIdC\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "Debug\".
+  Creando directorio "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Se creará "Debug\CompilerIdC.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+ClCompile:
+  D:\VisualStudio\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  D:\VisualStudio\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=D:\VisualStudio\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe
+FinalizeBuildStatus:
+  Se eliminará el archivo "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Compilación del proyecto terminada "C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CompilerIdC\CompilerIdC.vcxproj" (destinos predeterminados).
+
+Compilación correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:03.73
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/CMakeFiles/3.15.2/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine versión 15.9.21+g9802d43bc3 para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilación iniciada a las 03/10/2019 12:23:17 p. m..
+Proyecto "C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CompilerIdCXX\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "Debug\".
+  Creando directorio "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Se creará "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+ClCompile:
+  D:\VisualStudio\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  D:\VisualStudio\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=D:\VisualStudio\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe
+FinalizeBuildStatus:
+  Se eliminará el archivo "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Compilación del proyecto terminada "C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CompilerIdCXX\CompilerIdCXX.vcxproj" (destinos predeterminados).
+
+Compilación correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:02.70
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/CMakeFiles/3.15.2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/VisualStudio/MSBuild/15.0/Bin/MSBuild.exe cmTC_32530.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && Microsoft (R) Build Engine versión 15.9.21+g9802d43bc3 para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.16.27032.1 para x86
+  testCCompiler.c
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_32530.dir\Debug\\" /Fd"cmTC_32530.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\CMakeTmp\testCCompiler.c"
+  
+  cmTC_32530.vcxproj -> C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\CMakeTmp\Debug\cmTC_32530.exe
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/VisualStudio/MSBuild/15.0/Bin/MSBuild.exe cmTC_36c44.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && Microsoft (R) Build Engine versión 15.9.21+g9802d43bc3 para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.16.27032.1 para x86
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_36c44.dir\Debug\\" /Fd"cmTC_36c44.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCCompilerABI.c"
+  CMakeCCompilerABI.c
+  
+  cmTC_36c44.vcxproj -> C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\CMakeTmp\Debug\cmTC_36c44.exe
+
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/VisualStudio/MSBuild/15.0/Bin/MSBuild.exe cmTC_2ad47.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && Microsoft (R) Build Engine versión 15.9.21+g9802d43bc3 para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.16.27032.1 para x86
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2ad47.dir\Debug\\" /Fd"cmTC_2ad47.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  testCXXCompiler.cxx
+  
+  cmTC_2ad47.vcxproj -> C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\CMakeTmp\Debug\cmTC_2ad47.exe
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/VisualStudio/MSBuild/15.0/Bin/MSBuild.exe cmTC_e79ca.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && Microsoft (R) Build Engine versión 15.9.21+g9802d43bc3 para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.16.27032.1 para x86
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e79ca.dir\Debug\\" /Fd"cmTC_e79ca.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCXXCompilerABI.cpp"
+  CMakeCXXCompilerABI.cpp
+  
+  cmTC_e79ca.vcxproj -> C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\CMakeTmp\Debug\cmTC_e79ca.exe
+
+
+

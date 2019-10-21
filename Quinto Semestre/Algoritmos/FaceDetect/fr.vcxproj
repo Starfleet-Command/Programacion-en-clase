@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D33D6531-6F6D-3E7B-8C04-21E77DDF742A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>fr</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">fr.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">fr</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">fr.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">fr</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">fr.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">fr</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">fr.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">fr</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OpenCV\opencv\user_build;D:\OpenCV\opencv\sources\include;D:\OpenCV\opencv\sources\modules\core\include;D:\OpenCV\opencv\sources\modules\flann\include;D:\OpenCV\opencv\sources\modules\imgproc\include;D:\OpenCV\opencv\sources\modules\ml\include;D:\OpenCV\opencv\sources\modules\photo\include;D:\OpenCV\opencv\sources\modules\dnn\include;D:\OpenCV\opencv\sources\modules\features2d\include;D:\OpenCV\opencv\sources\modules\gapi\include;D:\OpenCV\opencv\sources\modules\imgcodecs\include;D:\OpenCV\opencv\sources\modules\videoio\include;D:\OpenCV\opencv\sources\modules\calib3d\include;D:\OpenCV\opencv\sources\modules\highgui\include;D:\OpenCV\opencv\sources\modules\objdetect\include;D:\OpenCV\opencv\sources\modules\stitching\include;D:\OpenCV\opencv\sources\modules\ts\include;D:\OpenCV\opencv\sources\modules\video\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OpenCV\opencv\user_build;D:\OpenCV\opencv\sources\include;D:\OpenCV\opencv\sources\modules\core\include;D:\OpenCV\opencv\sources\modules\flann\include;D:\OpenCV\opencv\sources\modules\imgproc\include;D:\OpenCV\opencv\sources\modules\ml\include;D:\OpenCV\opencv\sources\modules\photo\include;D:\OpenCV\opencv\sources\modules\dnn\include;D:\OpenCV\opencv\sources\modules\features2d\include;D:\OpenCV\opencv\sources\modules\gapi\include;D:\OpenCV\opencv\sources\modules\imgcodecs\include;D:\OpenCV\opencv\sources\modules\videoio\include;D:\OpenCV\opencv\sources\modules\calib3d\include;D:\OpenCV\opencv\sources\modules\highgui\include;D:\OpenCV\opencv\sources\modules\objdetect\include;D:\OpenCV\opencv\sources\modules\stitching\include;D:\OpenCV\opencv\sources\modules\ts\include;D:\OpenCV\opencv\sources\modules\video\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OpenCV\opencv\user_build;D:\OpenCV\opencv\sources\include;D:\OpenCV\opencv\sources\modules\core\include;D:\OpenCV\opencv\sources\modules\flann\include;D:\OpenCV\opencv\sources\modules\imgproc\include;D:\OpenCV\opencv\sources\modules\ml\include;D:\OpenCV\opencv\sources\modules\photo\include;D:\OpenCV\opencv\sources\modules\dnn\include;D:\OpenCV\opencv\sources\modules\features2d\include;D:\OpenCV\opencv\sources\modules\gapi\include;D:\OpenCV\opencv\sources\modules\imgcodecs\include;D:\OpenCV\opencv\sources\modules\videoio\include;D:\OpenCV\opencv\sources\modules\calib3d\include;D:\OpenCV\opencv\sources\modules\highgui\include;D:\OpenCV\opencv\sources\modules\objdetect\include;D:\OpenCV\opencv\sources\modules\stitching\include;D:\OpenCV\opencv\sources\modules\ts\include;D:\OpenCV\opencv\sources\modules\video\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\OpenCV\opencv\user_build\lib\Debug\opencv_dnn411d.lib;D:\OpenCV\opencv\user_build\lib\Debug\opencv_gapi411d.lib;D:\OpenCV\opencv\user_build\lib\Debug\opencv_highgui411d.lib;D:\OpenCV\opencv\user_build\lib\Debug\opencv_ml411d.lib;D:\OpenCV\opencv\user_build\lib\Debug\opencv_objdetect411d.lib;D:\OpenCV\opencv\user_build\lib\Debug\opencv_photo411d.lib;D:\OpenCV\opencv\user_build\lib\Debug\opencv_stitching411d.lib;D:\OpenCV\opencv\user_build\lib\Debug\opencv_video411d.lib;D:\OpenCV\opencv\user_build\lib\Debug\opencv_videoio411d.lib;D:\OpenCV\opencv\user_build\lib\Debug\opencv_imgcodecs411d.lib;D:\OpenCV\opencv\user_build\lib\Debug\opencv_calib3d411d.lib;D:\OpenCV\opencv\user_build\lib\Debug\opencv_features2d411d.lib;D:\OpenCV\opencv\user_build\lib\Debug\opencv_flann411d.lib;D:\OpenCV\opencv\user_build\lib\Debug\opencv_imgproc411d.lib;D:\OpenCV\opencv\user_build\lib\Debug\opencv_core411d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/Debug/fr.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/Debug/fr.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OpenCV\opencv\user_build;D:\OpenCV\opencv\sources\include;D:\OpenCV\opencv\sources\modules\core\include;D:\OpenCV\opencv\sources\modules\flann\include;D:\OpenCV\opencv\sources\modules\imgproc\include;D:\OpenCV\opencv\sources\modules\ml\include;D:\OpenCV\opencv\sources\modules\photo\include;D:\OpenCV\opencv\sources\modules\dnn\include;D:\OpenCV\opencv\sources\modules\features2d\include;D:\OpenCV\opencv\sources\modules\gapi\include;D:\OpenCV\opencv\sources\modules\imgcodecs\include;D:\OpenCV\opencv\sources\modules\videoio\include;D:\OpenCV\opencv\sources\modules\calib3d\include;D:\OpenCV\opencv\sources\modules\highgui\include;D:\OpenCV\opencv\sources\modules\objdetect\include;D:\OpenCV\opencv\sources\modules\stitching\include;D:\OpenCV\opencv\sources\modules\ts\include;D:\OpenCV\opencv\sources\modules\video\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OpenCV\opencv\user_build;D:\OpenCV\opencv\sources\include;D:\OpenCV\opencv\sources\modules\core\include;D:\OpenCV\opencv\sources\modules\flann\include;D:\OpenCV\opencv\sources\modules\imgproc\include;D:\OpenCV\opencv\sources\modules\ml\include;D:\OpenCV\opencv\sources\modules\photo\include;D:\OpenCV\opencv\sources\modules\dnn\include;D:\OpenCV\opencv\sources\modules\features2d\include;D:\OpenCV\opencv\sources\modules\gapi\include;D:\OpenCV\opencv\sources\modules\imgcodecs\include;D:\OpenCV\opencv\sources\modules\videoio\include;D:\OpenCV\opencv\sources\modules\calib3d\include;D:\OpenCV\opencv\sources\modules\highgui\include;D:\OpenCV\opencv\sources\modules\objdetect\include;D:\OpenCV\opencv\sources\modules\stitching\include;D:\OpenCV\opencv\sources\modules\ts\include;D:\OpenCV\opencv\sources\modules\video\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OpenCV\opencv\user_build;D:\OpenCV\opencv\sources\include;D:\OpenCV\opencv\sources\modules\core\include;D:\OpenCV\opencv\sources\modules\flann\include;D:\OpenCV\opencv\sources\modules\imgproc\include;D:\OpenCV\opencv\sources\modules\ml\include;D:\OpenCV\opencv\sources\modules\photo\include;D:\OpenCV\opencv\sources\modules\dnn\include;D:\OpenCV\opencv\sources\modules\features2d\include;D:\OpenCV\opencv\sources\modules\gapi\include;D:\OpenCV\opencv\sources\modules\imgcodecs\include;D:\OpenCV\opencv\sources\modules\videoio\include;D:\OpenCV\opencv\sources\modules\calib3d\include;D:\OpenCV\opencv\sources\modules\highgui\include;D:\OpenCV\opencv\sources\modules\objdetect\include;D:\OpenCV\opencv\sources\modules\stitching\include;D:\OpenCV\opencv\sources\modules\ts\include;D:\OpenCV\opencv\sources\modules\video\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\OpenCV\opencv\user_build\lib\Release\opencv_dnn411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_gapi411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_highgui411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_ml411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_objdetect411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_photo411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_stitching411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_video411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_videoio411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_imgcodecs411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_calib3d411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_features2d411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_flann411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_imgproc411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_core411.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/Release/fr.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/Release/fr.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OpenCV\opencv\user_build;D:\OpenCV\opencv\sources\include;D:\OpenCV\opencv\sources\modules\core\include;D:\OpenCV\opencv\sources\modules\flann\include;D:\OpenCV\opencv\sources\modules\imgproc\include;D:\OpenCV\opencv\sources\modules\ml\include;D:\OpenCV\opencv\sources\modules\photo\include;D:\OpenCV\opencv\sources\modules\dnn\include;D:\OpenCV\opencv\sources\modules\features2d\include;D:\OpenCV\opencv\sources\modules\gapi\include;D:\OpenCV\opencv\sources\modules\imgcodecs\include;D:\OpenCV\opencv\sources\modules\videoio\include;D:\OpenCV\opencv\sources\modules\calib3d\include;D:\OpenCV\opencv\sources\modules\highgui\include;D:\OpenCV\opencv\sources\modules\objdetect\include;D:\OpenCV\opencv\sources\modules\stitching\include;D:\OpenCV\opencv\sources\modules\ts\include;D:\OpenCV\opencv\sources\modules\video\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OpenCV\opencv\user_build;D:\OpenCV\opencv\sources\include;D:\OpenCV\opencv\sources\modules\core\include;D:\OpenCV\opencv\sources\modules\flann\include;D:\OpenCV\opencv\sources\modules\imgproc\include;D:\OpenCV\opencv\sources\modules\ml\include;D:\OpenCV\opencv\sources\modules\photo\include;D:\OpenCV\opencv\sources\modules\dnn\include;D:\OpenCV\opencv\sources\modules\features2d\include;D:\OpenCV\opencv\sources\modules\gapi\include;D:\OpenCV\opencv\sources\modules\imgcodecs\include;D:\OpenCV\opencv\sources\modules\videoio\include;D:\OpenCV\opencv\sources\modules\calib3d\include;D:\OpenCV\opencv\sources\modules\highgui\include;D:\OpenCV\opencv\sources\modules\objdetect\include;D:\OpenCV\opencv\sources\modules\stitching\include;D:\OpenCV\opencv\sources\modules\ts\include;D:\OpenCV\opencv\sources\modules\video\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OpenCV\opencv\user_build;D:\OpenCV\opencv\sources\include;D:\OpenCV\opencv\sources\modules\core\include;D:\OpenCV\opencv\sources\modules\flann\include;D:\OpenCV\opencv\sources\modules\imgproc\include;D:\OpenCV\opencv\sources\modules\ml\include;D:\OpenCV\opencv\sources\modules\photo\include;D:\OpenCV\opencv\sources\modules\dnn\include;D:\OpenCV\opencv\sources\modules\features2d\include;D:\OpenCV\opencv\sources\modules\gapi\include;D:\OpenCV\opencv\sources\modules\imgcodecs\include;D:\OpenCV\opencv\sources\modules\videoio\include;D:\OpenCV\opencv\sources\modules\calib3d\include;D:\OpenCV\opencv\sources\modules\highgui\include;D:\OpenCV\opencv\sources\modules\objdetect\include;D:\OpenCV\opencv\sources\modules\stitching\include;D:\OpenCV\opencv\sources\modules\ts\include;D:\OpenCV\opencv\sources\modules\video\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\OpenCV\opencv\user_build\lib\Release\opencv_dnn411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_gapi411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_highgui411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_ml411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_objdetect411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_photo411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_stitching411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_video411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_videoio411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_imgcodecs411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_calib3d411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_features2d411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_flann411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_imgproc411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_core411.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/MinSizeRel/fr.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/MinSizeRel/fr.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OpenCV\opencv\user_build;D:\OpenCV\opencv\sources\include;D:\OpenCV\opencv\sources\modules\core\include;D:\OpenCV\opencv\sources\modules\flann\include;D:\OpenCV\opencv\sources\modules\imgproc\include;D:\OpenCV\opencv\sources\modules\ml\include;D:\OpenCV\opencv\sources\modules\photo\include;D:\OpenCV\opencv\sources\modules\dnn\include;D:\OpenCV\opencv\sources\modules\features2d\include;D:\OpenCV\opencv\sources\modules\gapi\include;D:\OpenCV\opencv\sources\modules\imgcodecs\include;D:\OpenCV\opencv\sources\modules\videoio\include;D:\OpenCV\opencv\sources\modules\calib3d\include;D:\OpenCV\opencv\sources\modules\highgui\include;D:\OpenCV\opencv\sources\modules\objdetect\include;D:\OpenCV\opencv\sources\modules\stitching\include;D:\OpenCV\opencv\sources\modules\ts\include;D:\OpenCV\opencv\sources\modules\video\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OpenCV\opencv\user_build;D:\OpenCV\opencv\sources\include;D:\OpenCV\opencv\sources\modules\core\include;D:\OpenCV\opencv\sources\modules\flann\include;D:\OpenCV\opencv\sources\modules\imgproc\include;D:\OpenCV\opencv\sources\modules\ml\include;D:\OpenCV\opencv\sources\modules\photo\include;D:\OpenCV\opencv\sources\modules\dnn\include;D:\OpenCV\opencv\sources\modules\features2d\include;D:\OpenCV\opencv\sources\modules\gapi\include;D:\OpenCV\opencv\sources\modules\imgcodecs\include;D:\OpenCV\opencv\sources\modules\videoio\include;D:\OpenCV\opencv\sources\modules\calib3d\include;D:\OpenCV\opencv\sources\modules\highgui\include;D:\OpenCV\opencv\sources\modules\objdetect\include;D:\OpenCV\opencv\sources\modules\stitching\include;D:\OpenCV\opencv\sources\modules\ts\include;D:\OpenCV\opencv\sources\modules\video\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OpenCV\opencv\user_build;D:\OpenCV\opencv\sources\include;D:\OpenCV\opencv\sources\modules\core\include;D:\OpenCV\opencv\sources\modules\flann\include;D:\OpenCV\opencv\sources\modules\imgproc\include;D:\OpenCV\opencv\sources\modules\ml\include;D:\OpenCV\opencv\sources\modules\photo\include;D:\OpenCV\opencv\sources\modules\dnn\include;D:\OpenCV\opencv\sources\modules\features2d\include;D:\OpenCV\opencv\sources\modules\gapi\include;D:\OpenCV\opencv\sources\modules\imgcodecs\include;D:\OpenCV\opencv\sources\modules\videoio\include;D:\OpenCV\opencv\sources\modules\calib3d\include;D:\OpenCV\opencv\sources\modules\highgui\include;D:\OpenCV\opencv\sources\modules\objdetect\include;D:\OpenCV\opencv\sources\modules\stitching\include;D:\OpenCV\opencv\sources\modules\ts\include;D:\OpenCV\opencv\sources\modules\video\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\OpenCV\opencv\user_build\lib\Release\opencv_dnn411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_gapi411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_highgui411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_ml411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_objdetect411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_photo411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_stitching411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_video411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_videoio411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_imgcodecs411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_calib3d411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_features2d411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_flann411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_imgproc411.lib;D:\OpenCV\opencv\user_build\lib\Release\opencv_core411.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/RelWithDebInfo/fr.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/RelWithDebInfo/fr.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect" "-BC:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect" --check-stamp-file "C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CMakeCCompiler.cmake;C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CMakeCXXCompiler.cmake;C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CMakeRCCompiler.cmake;C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CMakeSystem.cmake;D:\OpenCV\opencv\user_build\OpenCVConfig-version.cmake;D:\OpenCV\opencv\user_build\OpenCVConfig.cmake;D:\OpenCV\opencv\user_build\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect" "-BC:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect" --check-stamp-file "C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CMakeCCompiler.cmake;C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CMakeCXXCompiler.cmake;C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CMakeRCCompiler.cmake;C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CMakeSystem.cmake;D:\OpenCV\opencv\user_build\OpenCVConfig-version.cmake;D:\OpenCV\opencv\user_build\OpenCVConfig.cmake;D:\OpenCV\opencv\user_build\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect" "-BC:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect" --check-stamp-file "C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CMakeCCompiler.cmake;C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CMakeCXXCompiler.cmake;C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CMakeRCCompiler.cmake;C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CMakeSystem.cmake;D:\OpenCV\opencv\user_build\OpenCVConfig-version.cmake;D:\OpenCV\opencv\user_build\OpenCVConfig.cmake;D:\OpenCV\opencv\user_build\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect" "-BC:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect" --check-stamp-file "C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CMakeCCompiler.cmake;C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CMakeCXXCompiler.cmake;C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CMakeRCCompiler.cmake;C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\3.15.2\CMakeSystem.cmake;D:\OpenCV\opencv\user_build\OpenCVConfig-version.cmake;D:\OpenCV\opencv\user_build\OpenCVConfig.cmake;D:\OpenCV\opencv\user_build\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\main.cpp" />
+    <ClCompile Include="C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\FaceDetector.cpp" />
+    <ClInclude Include="C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\FaceDetector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\ZERO_CHECK.vcxproj">
+      <Project>{1B6557D5-020F-328A-A10B-49419F935140}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

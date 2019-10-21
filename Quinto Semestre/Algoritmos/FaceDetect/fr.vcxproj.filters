@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\FaceDetector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\FaceDetector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Juan Fco\Desktop\Programacion\Quinto Semestre\Algoritmos\FaceDetect\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{BCEC45AF-2BF3-352E-B840-1CA19738562C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D686AA4F-06CA-3914-9602-9D008DD4CA54}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

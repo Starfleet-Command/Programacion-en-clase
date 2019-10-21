@@ -1,0 +1,3 @@
+C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/CMakeFiles/fr.dir
+C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/CMakeFiles/ALL_BUILD.dir
+C:/Users/Juan Fco/Desktop/Programacion/Quinto Semestre/Algoritmos/FaceDetect/CMakeFiles/ZERO_CHECK.dir
