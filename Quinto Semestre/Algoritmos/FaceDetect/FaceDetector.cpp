@@ -4,23 +4,23 @@ using namespace std;
 
 FaceDetector::FaceDetector()
 {
-        face_cascade.load("D:/OpenCV/opencv/user_build/install/etc/haarcascades/haarcascade_frontalface_alt.xml"); //Hay que hacer esto genericamente
+        face_cascade.load("haarcascade_frontalface_alt.xml"); //Hay que hacer esto genericamente
 
         //Se pueden incluir otros xmls, dependiendo de como apareceran las caras, como haarcascade_frontalface_alt_tree o haarcascade_frontalface_alt2
         next_height = 40;
         window_scaling = 1.1;
         minClassifiers = 4;
-        imgHeight = 40;
+        imgHeight = next_height;
         flags = 0;
 }
 
-FaceDetector::FaceDetector(string face_cascade_name, int next_height_, double scale_factor, int minConsensus, int next_height_img, int flag)
+FaceDetector::FaceDetector(string face_cascade_name, int next_height_, double scale_factor, int minConsensus, int flag)
 {
         next_height = next_height_;
         face_cascade.load(face_cascade_name);
         window_scaling = scale_factor;
         minClassifiers = minConsensus;
-        imgHeight = next_height_img;
+        imgHeight = next_height_;
         flags = flag;
 }
 

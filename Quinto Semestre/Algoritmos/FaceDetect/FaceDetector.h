@@ -16,7 +16,7 @@ private:
     int flags;
 
 public:
-    FaceDetector(std::string face_cascade_name, int next_height_ = 40, double scale_factor = 1.1, int minConsensus = 4, int next_height_img = 40, int flag = 0);
+    FaceDetector(std::string face_cascade_name, int next_height_ = 40, double scale_factor = 1.1, int minConsensus = 4, int flag = 0);
     FaceDetector();
     ~FaceDetector(){};
     std::vector<cv::Rect> nextFrame(cv::Mat frame);
