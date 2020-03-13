@@ -4,9 +4,9 @@ Juan Francisco Gortarez
 21/02/2020
 */
 
-#include "convertPPM.h"
+#include "ConvertPPM.h"
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 
     //char *inFilename, *outFilename;
@@ -14,9 +14,12 @@ int main(int argc, char const *argv[])
     char outFilename[50];
     char cw[] = "CW";
     char ccw[] = "CCW";
-    ImageData *image;
+    ImageData *image = NULL;
     int options, isNegative, dirRotation, noRotations;
+    int maxPix;
     isNegative = 0;
+    dirRotation = 0;
+    noRotations = 0;
 
     while ((options = getopt(argc, argv, "i:o:nr:")) != -1) //process the options from the console input
     {
@@ -34,25 +37,30 @@ int main(int argc, char const *argv[])
             break;
         case 'r':
             noRotations++;
-            if (strncmp(optarg, cw, sizeof(optarg)) == 0)
+            if (strncmp(optarg, cw, sizeof(cw)) == 0)
             {
-                dirRotation++; //CW rotation is assigned a value of 1. CCW is assigned -1
+                dirRotation = 1; //CW rotation is assigned a value of 1. CCW is assigned a 3 (because of the number of rotations each will take )
             }
-            else if (strncmp(optarg, ccw, sizeof(optarg)) == 0)
+            else if (strncmp(optarg, ccw, sizeof(ccw)) == 0)
             {
-                dirRotation--;
+                dirRotation = dirRotation + 3;
             }
             break;
         case '?': //If an incorrect option is sent, getopt returns a ?
             printf("unknown option: %c\n", optopt);
-            break;
-
-        default:
+            printf("Usage: ./{name} -i {input file with ''} -o {output file with ''} [Optional] -n -r {'CW'/'CCW'}");
+            exit(1);
             break;
         }
     }
-    image = readImage(inFilename);
-    // image = rotateImage(image, dirRotation, noRotations);
-    writeImage(outFilename, image, isNegative);
+
+    image = readImage(inFilename, &maxPix);
+    image = rotateImage(image, dirRotation, noRotations);
+    if (isNegative == 1)
+    {
+        image = applyNegative(image, &maxPix);
+    }
+    writeImage(outFilename, image, &maxPix);
+    free(image);
     return 0;
 }

@@ -18,6 +18,7 @@ typedef struct
 {
     int row;
     int col;
+    int isBinary;
     Pixel *data;
 
 } ImageData;
@@ -28,8 +29,10 @@ typedef struct
 #include <getopt.h>
 #include <unistd.h>
 
-ImageData *readImage(char *filename);
+ImageData *readImage(char *filename, int *maxPix);
 
-void writeImage(char *filename, ImageData *img, int isNegative);
+void writeImage(char *filename, ImageData *img, int *maxPix);
 
 ImageData *rotateImage(ImageData *img, int dir, int numRot);
+
+ImageData *applyNegative(ImageData *img, int *maxPix);
