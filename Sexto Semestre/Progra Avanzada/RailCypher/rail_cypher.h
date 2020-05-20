@@ -13,7 +13,6 @@
 #include <stdbool.h>
 
 #define maxRow 100
-#define maxCol 100
 
 char *encode(int rails, char *message);
 
